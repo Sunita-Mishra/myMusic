@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-content: center;
+}
+.k{
+    width: 30vw;
+    height: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid rgba(0,0,0, 0.4);
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: 2px 0px 10px 10px rgba(0,0,0, 0.3);
+}
+
+#images{
+    height: 15vw;
+    width: 15vw;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.icons{width: 20vw;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50%;
+    cursor: pointer;
+    align-items: center;
+    padding-left: 1vw;
+}
+.name{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#art{
+    padding-left: 10px;
+    color: rgba(0,0,0, 0.4);
+    font-size: 2vw;
+}
+.icons .pl{
+    height: 3vw;
+    width: 3vw;
+    background-color:black;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.anime{
+    animation: rotate 3s linear infinite;
+}
+@keyframes rotate {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+#nam{
+    font-size: 6vw;
+}
+@media screen and (max-width: 500px) { 
+    .k{
+        width: 80vw;
+        height: 80vh;
+    }
+    .icons{width: 50vw;
+    }
+    .icons .pl{
+        height: 12vw;
+        width: 12vw;
+        background-color:black;
+        border-radius: 50%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #images{
+        height: 40vw;
+        width: 40vw;
+        
+    }
+}
